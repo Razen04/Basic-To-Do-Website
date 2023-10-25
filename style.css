@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sometype Mono', monospace;
+}
+body{
+    background-color: black;
+}
+.heading{
+    color: #36e307;
+}
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    background-color: #1b1f25;
+    transition: 0.3s all ease-out;
+}
+
+.container:hover {
+    box-shadow: 4px 4px 1px 0 #36e307;
+}
+
+.container h1 {
+    font-size: 3em;
+    color: #C9D1D9;
+}
+.edit-input {
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#task-el {
+    height: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 5%;
+    background-color: #e7f2f5;
+    padding: 5px 0;
+    text-align: center;
+    font-size: larger;
+    transition: 0.2 all ease-in;
+}
+
+#task-el:hover {
+    color: white;
+    background-color: #1b1f25;
+    box-shadow: 0 2px 5px 0 #36e307;
+}
+
+#task-el:hover::placeholder {
+    color: white;
+}
+
+
+.container button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    display: block;
+    height: 40px;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+    background-color: #36e307;
+    color: rgb(42, 42, 42);
+    transition: 0.4s all ease-in-out;
+}
+
+.container button:hover {
+    color: white;
+    background-color: #1b1f25;
+    box-shadow: 4px 4px 0px 0 #36e307;
+}
+/* TaskList */
+.scroll-container {
+    max-height: 310px;
+    overflow-y: auto; 
+    margin-top: 50px;
+}
+.scroll-container::-webkit-scrollbar { 
+    display: none; 
+    
+}
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li-el {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width:96% ;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border: none;
+    background-color:black ;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+li-el:hover{
+    background-color:#36e307;
+    color: black;
+    box-shadow: 0 2px 5px 0 #36e307;
+    
+}
+.icons{
+    display: flex;
+}
+.icons i {
+    padding: 10px;
+    align-items: center;
+    font-size: 35px;
+    transition: 0.2s all ease-out;
+    color: black;
+}
+.icons i:hover{
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+}
+/* Completed Task */
+.completed {
+    background-color: #FF0000; 
+    color: #FFF;
+}
