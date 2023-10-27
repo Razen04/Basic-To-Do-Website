@@ -54,14 +54,22 @@ function editTask(unique) {
         const inputField = document.createElement("input")
         inputField.className = "edit-input";
         inputField.setAttribute("type", "text");
+        inputField.value = taskText.textContent;
         // Handle saving the updated text
         function saveUpdatedText() {
             const updatedText = inputField.value;
             if(updatedText === ''){
-                taskText.taskContent =taskText;
+                inputField.value = taskText.textContent;
+                inputField.focus();
             }
             else{
                 taskText.textContent = updatedText; 
+                liEl.innerHTML = ` <span id="task-text">${updatedText}</span> <div class="icons">
+            <i onclick="editTask(this)" class="fa-solid fa-pen-nib" id="edit"></i>
+            <i onclick="completeTask(this)" id="solidIcon" class="fa-solid fa-square-check" style="display: none;"></i>
+            <i onclick="completeTask(this)" id="regularIcon" class="fa-regular fa-square-check"></i>
+            <i onclick="delTask(this)" class="fa-solid fa-trash" id="del"></i>
+            </div>`;
             }
             
             liEl.removeChild(inputField);
@@ -74,7 +82,7 @@ function editTask(unique) {
             }
         });
 
-        liEl.appendChild(inputField);
+        liEl.replaceChild(inputField, taskText);
         inputField.focus();
     }
 }

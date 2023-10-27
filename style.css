@@ -152,3 +152,48 @@ li-el:hover{
     background-color: #FF0000; 
     color: #FFF;
 }
+@media only screen and (max-width: 1281px) {
+    /* Your CSS rules for iPads and smaller screens go here */
+    .container{
+        width: 1000px;
+    }
+    p{
+        width: 87%;
+        margin: 55px 0 20px -35px;
+    }
+    button{
+        margin: 50px 0px 50px -31px;
+        width: 123%;
+    }
+    #task-el{
+        font-size: 0.9rem;
+    }
+    li-el{
+        width: 96%;
+    }
+    .icons i{
+        color: white;
+        font-size: 20px;
+        padding: 6px;
+    }
+}
+@media only screen and (max-width: 1071px){
+    .container{
+        width: 500px;
+    }
+    li-el{
+        width: 92%;
+    }
+}
+@media only screen and (max-width: 575px){
+    .container{
+        width: 284px;
+    }
+    li-el{
+        width: 86%;
+    }
+    .edit-input{
+        height: 25px;
+        width: 100%;
+    }
+}
