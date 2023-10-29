@@ -33,7 +33,7 @@ If you'd like to contribute to this project, please follow these guidelines:
 4. Push to your branch: git push origin feature-name.
 5. Create a pull request with a detailed description of your changes.
 
-##Planned to do
+## Planned to do
 
 - [ ] Filter and Sorting: Implement options to filter and sort tasks based on criteria such as due date, priority, or completion status.
 - [ ] Task Categories or Labels: Enable users to categorize tasks into different labels or categories for better organization.
