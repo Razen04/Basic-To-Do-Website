@@ -1,6 +1,6 @@
 # Basic To-Do Website
 
-![To-Do Website Screenshot]![To-do](https://github.com/Razen04/Basic-To-Do-Website/assets/73794553/122efc36-b0f2-491d-8d5a-73bc9fabd696)
+![To-do](https://github.com/Razen04/Basic-To-Do-Website/assets/73794553/122efc36-b0f2-491d-8d5a-73bc9fabd696)
 
 
 > Keep your tasks organized and stay productive with our To-Do Website.
