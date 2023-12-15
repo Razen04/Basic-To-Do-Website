@@ -34,10 +34,10 @@ function addTask() {
         const solidIcon = document.getElementById("solidIcon");
         const regularIcon = document.getElementById("regularIcon");
         const del = document.getElementById("del");
-        edit.title = "Clcik here to edit";
-        solidIcon.title = "Clcik here to complete";
-        regularIcon.title = "Clcik here to complete";
-        del.title = "Clcik here to delete";
+        edit.title = "Click here to edit";
+        solidIcon.title = "Click here to complete";
+        regularIcon.title = "Click here to complete";
+        del.title = "Click here to delete";
     }
 }
 /* Edit Task Function */
